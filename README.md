@@ -1,4 +1,4 @@
-# heat-seeker
+# Heat-Seeker
 A Named Entity Recognition algorithm with a companion REST API to detect entities of interest in a SMS. 
 
 
@@ -10,7 +10,7 @@ A REST API which detects specific entities in a SMS (it can also work on any giv
 - Install the requirements via ```pip install requirements.txt```
 (creating a virutal environment is recommended, I have used a conda environment here)
 
-- Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. 
+- Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. The dataset must contain the message and the requisite fields: `accountid`, `amount` and `balance` as present in the message. Take a look at the [sample dataset](https://github.com/bhargav1000/Heat-Seeker/blob/master/sample_dataset.csv) to get started.
 	- It is written to detect the following fields:
 		- accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
 		- amount - The amount in the transaction (currently detects integer values for simplicity).
