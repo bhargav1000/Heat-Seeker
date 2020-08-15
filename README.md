@@ -64,7 +64,7 @@ The output has the following format:
 			"ner_output":{
 				"accountId": "<value>",
 				"balance": "<value>",
-				"amount": "<amount>"
+				"amount": "<value>"
 			}
 		}
 	]
