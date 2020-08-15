@@ -1,9 +1,9 @@
 # heat-seeker
-A Named Entity Recognition algorithm with a companion REST api to detect entities of interest in a SMS. 
+A Named Entity Recognition algorithm with a companion REST API to detect entities of interest in a SMS. 
 
 
 # About
-A REST api which detects specific entities in a SMS (it can also work on any given text for that matter) via a Named Entity Recognition algorithm written in python using the [spaCy](https://spacy.io/) package. It simplifies the process of identifying key elements in a given SMS where it can be mined to reveal information without the use of regular expressions or keyword search. The API is written using [Flask](https://flask.palletsprojects.com/en/1.1.x/) and accepts a message list in a POST request and outputs the corresponding entities it has detected in a message.
+A REST API which detects specific entities in a SMS (it can also work on any given text for that matter) via a Named Entity Recognition algorithm written in python using the [spaCy](https://spacy.io/) package. It simplifies the process of identifying key elements in a given SMS where it can be mined to reveal information without the use of regular expressions or keyword search. The API is written using [Flask](https://flask.palletsprojects.com/en/1.1.x/) and accepts a message list in a POST request and outputs the corresponding entities it has detected in a message.
 
 
 # Get started
@@ -12,9 +12,9 @@ A REST api which detects specific entities in a SMS (it can also work on any giv
 
 - Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. 
 	-It is written to detect the following fields:
-		- accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
-		- amount - The amount in the transaction (currently detects integer values for simplicity).
-		- balance - The balance of the account in the message.
+		1. accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
+		2. amount - The amount in the transaction (currently detects integer values for simplicity).
+		3. balance - The balance of the account in the message.
 
 	- The training code, ```ner_train.py``` automatically annotates the messages before training.
 
