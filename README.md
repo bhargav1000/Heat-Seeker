@@ -1,8 +1,10 @@
 # heat-seeker
 A Named Entity Recognition algorithm with a companion REST api to detect entities of interest in a SMS. 
 
+
 # About
 A REST api which detects specific entities in a SMS (it can also work on any given text for that matter) via a Named Entity Recognition algorithm written in python using the [spaCy](https://spacy.io/) package. It simplifies the process of identifying key elements in a given SMS where it can be mined to reveal information without the use of regular expressions or keyword search. The API is written using [Flask](https://flask.palletsprojects.com/en/1.1.x/) and accepts a message list in a POST request and outputs the corresponding entities it has detected in a message.
+
 
 # Get started
 - Install the requirements via ```pip install requirements.txt```
@@ -30,7 +32,8 @@ TRAIN_DATA = [
 You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
 (For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
 
-- Train the model, run ```python ner_train.py```.
+- Add the paths to your dataset and model output location.
+Now run ```python ner_train.py```. This will start training the model.
 
 - Once the model is trained, you can start the API.
 Run ```python main.py``` and start sending requests!
@@ -65,9 +68,11 @@ The output has the following format:
 ```
 
 
+
 # Troubleshooting
 - If the API does not start immediately, try changing the `port` parameter in **line 132** of `main.py` to a port of your choice.
 - If you receive any errors in the response, please check the json request to correct any typos or errors.   
+
 
 # Tips and tricks:
 - You can use the requests library to send your requests to the api. This can help with request automation. 
