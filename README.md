@@ -12,9 +12,9 @@ A REST api which detects specific entities in a SMS (it can also work on any giv
 
 - Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. 
 It is written to detect the following fields:
-1. accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
-2. amount - The amount in the transaction (currently detects integer values for simplicity).
-3. balance - The balance of the account in the message.
+	1. accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
+	2. amount - The amount in the transaction (currently detects integer values for simplicity).
+	3. balance - The balance of the account in the message.
 The training code, ```ner_train.py``` automatically annotates the messages before training.
 
 You can also add custom annotations to your dataset, please ensure that they follow this format:
@@ -32,11 +32,14 @@ TRAIN_DATA = [
 You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
 (For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
 
+
 - Add the paths to your dataset and model output location.
 Now run ```python ner_train.py```. This will start training the model.
 
+
 - Once the model is trained, you can start the API.
 Run ```python main.py``` and start sending requests!
+
 
 - The API currently accepts POST requests only. 
 This is the request format:
