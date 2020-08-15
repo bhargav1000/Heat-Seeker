@@ -11,10 +11,10 @@ A REST API which detects specific entities in a SMS (it can also work on any giv
 (creating a virutal environment is recommended, I have used a conda environment here)
 
 - Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. 
-	-It is written to detect the following fields:
-		1. accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
-		2. amount - The amount in the transaction (currently detects integer values for simplicity).
-		3. balance - The balance of the account in the message.
+	- It is written to detect the following fields:
+		- accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
+		- amount - The amount in the transaction (currently detects integer values for simplicity).
+		- balance - The balance of the account in the message.
 
 	- The training code, ```ner_train.py``` automatically annotates the messages before training.
 
