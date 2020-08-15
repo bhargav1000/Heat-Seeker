@@ -11,27 +11,27 @@ A REST api which detects specific entities in a SMS (it can also work on any giv
 (creating a virutal environment is recommended, I have used a conda environment here)
 
 - Annotate the dataset. It is already done via ```annotator.py``` which is specific to SMSs. 
-It is written to detect the following fields:
-	1. accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
-	2. amount - The amount in the transaction (currently detects integer values for simplicity).
-	3. balance - The balance of the account in the message.
-The training code, ```ner_train.py``` automatically annotates the messages before training.
+	-It is written to detect the following fields:
+		- accountid - The account number of the transaction, generally follows this format `XXXX1234` (other formats may also be detected).
+		- amount - The amount in the transaction (currently detects integer values for simplicity).
+		- balance - The balance of the account in the message.
 
-You can also add custom annotations to your dataset, please ensure that they follow this format:
-```
-[("<text>", {"entities": [(<starting string index>, <ending string index>, "<entity name>")]})]
-```
+	- The training code, ```ner_train.py``` automatically annotates the messages before training.
 
-Check out this example:
-```
-TRAIN_DATA = [
+	- You can also add custom annotations to your dataset, please ensure that they follow this format:
+	```
+	[("<text>", {"entities": [(<starting string index>, <ending string index>, "<entity name>")]})]
+	```
+
+	- Check out this example:
+	```
+	TRAIN_DATA = [
         ("Uber blew through $1 million a week", {"entities": [(0, 4, "ORG")]}),
         ("Google rebrands its business apps", {"entities": [(0, 6, "ORG")]})]
-```
+	```
 
-You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
-
-(For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
+	- You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
+	(For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
 
 
 - Add the paths to your dataset and model output location.
