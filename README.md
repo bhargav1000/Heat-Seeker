@@ -30,6 +30,7 @@ TRAIN_DATA = [
 ```
 
 You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
+
 (For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
 
 
