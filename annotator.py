@@ -15,10 +15,6 @@ def dataset_annotation(dataset):
         amount_string_end=0
         balance_string_start=0
         balance_string_end=0
-        txn_date_string_start=0
-        txn_date_string_end=0
-        txn_type_string_start=0
-        txn_type_string_end=0
         
         msg=row['msg'].lower() # always convert message to lowercase
         msg = msg.replace(",", "")
