@@ -29,7 +29,7 @@ TRAIN_DATA = [
         ("Google rebrands its business apps", {"entities": [(0, 6, "ORG")]})]
 ```
 
-You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).
+You can read more about annotations [here](https://spacy.io/usage/training#training-simple-style).__
 (For a more detailed explanation, see this [link](https://spacy.io/api/annotation#named-entities).)
 
 
