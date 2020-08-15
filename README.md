@@ -75,7 +75,7 @@ The output has the following format:
 
 # Troubleshooting
 - If the API does not start immediately, try changing the `port` parameter in **line 132** of `main.py` to a port of your choice.
-- If you receive any errors in the response, please check the json request to correct any typos or errors.   
+- If you receive any errors in the message response, please check `msg_list` to correct any typos or errors.   
 
 
 # Tips and tricks:
