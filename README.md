@@ -3,7 +3,7 @@ A Named Entity Recognition algorithm with a companion REST API to detect entitie
 
 
 # About
-Heat-Seeker is a REST API which detects specific entities in a SMS (it can also work on any given text for that matter) via a Named Entity Recognition algorithm written in python using the [spaCy](https://spacy.io/) package. It simplifies the process of identifying key elements in a given SMS where it can be mined to reveal information without the use of regular expressions or keyword search. The API is written using [Flask](https://flask.palletsprojects.com/en/1.1.x/) and accepts a message list in a POST request and outputs the corresponding entities it has detected in a message.
+Heat-Seeker is a REST API that detects specific entities in a SMS (it can also work on any given text for that matter) via a Named Entity Recognition algorithm written in python using the [spaCy](https://spacy.io/) package. It simplifies the process of identifying key elements in a given SMS where it can be mined to reveal information without the use of regular expressions or keyword search. The API is written using [Flask](https://flask.palletsprojects.com/en/1.1.x/) and accepts a message list in a POST request and outputs the corresponding entities it has detected in a message.
 
 
 # Get started
