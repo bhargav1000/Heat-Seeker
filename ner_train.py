@@ -17,7 +17,7 @@ nlp=spacy.load("en_core_web_sm")
 # # Import Data
 test=pd.read_csv("/path/to/your/dataset")
 test['accountid']=test['account_id']
-test['txn_date']=test['date']
+# test['txn_date']=test['date']
 # test=test.drop(columns=['account_id', 'Unnamed: 0', 'date'])
 test['balance']=test['balance']
 
