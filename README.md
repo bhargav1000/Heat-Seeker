@@ -46,7 +46,7 @@ Run ```python main.py``` and start sending requests!
 This is the request format:
 ```json
 {
-	"msglist":[
+	"msg_list":[
 		{
 			"msg":"The message you want to send",
 			"id":"the id of the message (can be a number or a string, helps you keep track of the message)"
